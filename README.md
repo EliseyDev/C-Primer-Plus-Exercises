@@ -25,3 +25,16 @@
  - Basic C data types
  - Using data types
  - Arguments and pitfalls
+
+### Chapter 4: "Character Strings and Formatted Input/Output"
+
+ - Function:
+     strlen()
+ - Keywords:
+     const
+ - Character strings
+ - How character strings are created and stored
+ - How you can use scanf() and printf() to read and display character strings
+ - How to use the strlen() function to measure string lengths
+ - The C preprocessor’s #define directive and ANSI C’s const modifier for creating
+   symbolic constants

@@ -11,5 +11,5 @@ int main(void) {
     printf("%c Startled by the sudden sound, Sally shouted,\n", alert);
     printf("\"By the Great Pumking, what was that!\"\n");
 
-	return 0;
+    return 0;
 }

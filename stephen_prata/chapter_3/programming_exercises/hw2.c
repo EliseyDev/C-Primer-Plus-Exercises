@@ -8,10 +8,10 @@
 int main(void) {
     char ch = 0;
 
-	printf("Please, enter an ASCII code decimal value:\n");
-	scanf("%hhd", &ch);
+    printf("Please, enter an ASCII code decimal value:\n");
+    scanf("%hhd", &ch);
 
     printf("Character is %c\n", ch);
 
-	return 0;
+    return 0;
 }

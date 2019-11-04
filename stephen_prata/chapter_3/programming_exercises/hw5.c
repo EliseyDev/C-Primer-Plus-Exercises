@@ -14,5 +14,5 @@ int main(void) {
 
     printf("Your age in seconds = %f\n", seconds_in_year * age);
 
-	return 0;
+    return 0;
 }

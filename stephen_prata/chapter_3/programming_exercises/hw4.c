@@ -21,5 +21,5 @@ int main(void) {
     printf("exponentian notation: %e\n", number);
     printf("p notation: %a\n", number);
 
-	return 0;
+    return 0;
 }
