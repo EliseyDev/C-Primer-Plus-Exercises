@@ -14,5 +14,5 @@ int main(void) {
     printf("Your basic pizza parameters are as follows:\n");
     printf("circumference = %1.2f, area = %1.2f\n", circum, area);
 
-	return 0;
+    return 0;
 }

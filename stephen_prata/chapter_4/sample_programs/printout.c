@@ -14,5 +14,5 @@ int main(void) {
     printf("Farewell! thou art too dear for my possessing,\n");
     printf("%c%d\n", '$', 2 * cost);
 
-	return 0;
+    return 0;
 }
