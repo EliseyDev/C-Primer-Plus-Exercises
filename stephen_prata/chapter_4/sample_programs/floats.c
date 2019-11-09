@@ -15,5 +15,5 @@ int main(void) {
     printf("*%+4.2f*\n", RENT);
     printf("*%010.2f*\n", RENT);
 
-	return 0;
+    return 0;
 }

@@ -14,5 +14,5 @@ int main(void) {
     printf("Instead, use a \"macro\" from inttypes.h: ");
     printf("me32 = %" PRId32 "\n", me32);
 
-	return 0;
+    return 0;
 }

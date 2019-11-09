@@ -12,5 +12,5 @@ int main(void) {
             salary, salary * 12);
     printf("\rGee!\n");
 
-	return 0;
+    return 0;
 }

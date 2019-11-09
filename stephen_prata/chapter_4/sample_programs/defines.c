@@ -14,5 +14,5 @@ int main(void) {
     printf("float precision = %d digits\n", FLT_DIG);
     printf("float epsilon = %e\n", FLT_EPSILON);
 
-	return 0;
+    return 0;
 }

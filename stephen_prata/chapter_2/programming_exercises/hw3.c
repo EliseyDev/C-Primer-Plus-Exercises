@@ -6,10 +6,10 @@
 #include <stdio.h>
 
 int main(void) {
-	int years = 33;
-	int days = 33 * 365;
+    int years = 33;
+    int days = 33 * 365;
 
-	printf("My age is %d years or %d days\n", years, days);
+    printf("My age is %d years or %d days\n", years, days);
 
-	return 0;
+    return 0;
 }

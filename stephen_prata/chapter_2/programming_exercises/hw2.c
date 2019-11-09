@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 int main(void) {
-	printf("Elisey Novikov, Moscow, Tepluy Stan dstr.\n");
+    printf("Elisey Novikov, Moscow, Tepluy Stan district.\n");
 
-	return 0;
+    return 0;
 }

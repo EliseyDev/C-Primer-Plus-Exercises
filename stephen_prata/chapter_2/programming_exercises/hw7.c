@@ -13,19 +13,19 @@
 void printSmile();
 
 int main(void) {
-	printSmile();
-	printSmile();
-	printSmile();
-	printf("\n");
-	printSmile();
-	printSmile();
-	printf("\n");
-	printSmile();
-	printf("\n");
+    printSmile();
+    printSmile();
+    printSmile();
+    printf("\n");
+    printSmile();
+    printSmile();
+    printf("\n");
+    printSmile();
+    printf("\n");
 
-	return 0;
+    return 0;
 }
 
 void printSmile(void) {
-	printf("Smile!");
+    printf("Smile!");
 }

@@ -12,10 +12,10 @@
 #include <stdio.h>
 
 int main(void) {	
-	printf("Elisey Novikov\n");
-	printf("Elisey\nNovikov\n");
-	printf("Elisey ");
-	printf("Novikov\n");
+    printf("Elisey Novikov\n");
+    printf("Elisey\nNovikov\n");
+    printf("Elisey ");
+    printf("Novikov\n");
 
-	return 0;
+    return 0; 
 }
