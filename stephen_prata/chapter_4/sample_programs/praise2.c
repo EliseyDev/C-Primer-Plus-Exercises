@@ -5,6 +5,7 @@
 #include <stdio.h>
 // provides strlen() prototype
 #include <string.h>
+
 #define PRAISE "You are an extraordinary being."
 
 int main(void) {
@@ -14,7 +15,7 @@ int main(void) {
     scanf("%s", name);
     printf("Hello, %s. %s\n", name, PRAISE);
     printf("Your name of %zd letters occupies %zd memory cells.\n",
-            strlen(name), sizeof name);
+           strlen(name), sizeof name);
     printf("The phrase of praise has %zd letters ", strlen(PRAISE));
     printf("and ocupies %zd memory cells.\n", sizeof PRAISE);
 

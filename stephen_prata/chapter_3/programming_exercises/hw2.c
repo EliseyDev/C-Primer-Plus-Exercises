@@ -3,7 +3,7 @@
   the character having that ASCII code.
 */
 
-#include <stdio.h> 
+#include <stdio.h>
 
 int main(void) {
     char ch = 0;

@@ -7,7 +7,7 @@ and display it in meters. */
 #include <stdio.h>
 
 int main(void) {
-	char name[20];
+    char name[20];
     float height;
 
     printf("Enter your name: ");

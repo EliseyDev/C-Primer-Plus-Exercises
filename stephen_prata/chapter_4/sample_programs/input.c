@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main(void) {
-    
+
     // variables
     int age;
     float assets;

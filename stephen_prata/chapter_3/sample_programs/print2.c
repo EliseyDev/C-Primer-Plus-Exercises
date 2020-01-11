@@ -4,7 +4,7 @@
 
 int main(void) {
     // system with 32-bit int and 16-bit short
-    unsigned int un = 3000000000;	
+    unsigned int un = 3000000000;
     short end = 200;
     long big = 65537;
     long long verybig = 12345678908642;

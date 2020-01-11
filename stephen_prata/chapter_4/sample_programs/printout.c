@@ -1,6 +1,7 @@
 /* printout.c -- uses conversion specifiers */
 
 #include <stdio.h>
+
 #define PI 3.141593
 
 int main(void) {

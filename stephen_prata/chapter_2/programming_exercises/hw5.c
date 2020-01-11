@@ -11,6 +11,7 @@
 #include <stdio.h>
 
 void br(void);
+
 void ic(void);
 
 int main(void) {
@@ -22,7 +23,7 @@ int main(void) {
     printf(",\n");
     br();
     printf("\n");
-	
+
     return 0;
 }
 

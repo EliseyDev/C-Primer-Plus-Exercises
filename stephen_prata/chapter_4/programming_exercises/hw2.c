@@ -26,6 +26,6 @@ int main(void) {
 
     // d
     printf("%*s\n", strlen(name) + 3, name);
-    
+
     return 0;
 }

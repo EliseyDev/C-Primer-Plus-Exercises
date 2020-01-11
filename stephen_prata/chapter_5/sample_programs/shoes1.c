@@ -5,7 +5,7 @@
 #define ADJUST 7.31
 
 int main(void) {
-	// another kind of symbolic constant
+    // another kind of symbolic constant
     const double SCALE = 0.333;
     double shoe, foor;
 

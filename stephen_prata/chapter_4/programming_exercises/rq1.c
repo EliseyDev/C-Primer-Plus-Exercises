@@ -1,6 +1,7 @@
 /* Review Questions - 4. It’s find the error time! */
 
 #include <stdio.h>
+
 #define B "booboo"
 #define X 10
 

@@ -9,7 +9,7 @@ e. The first five characters in a string left-justified in a field of width 7 */
 #include <stdio.h>
 
 int main(void) {
-    const int INT_VALUE = 1534;    
+    const int INT_VALUE = 1534;
     const char CHAR_VALUE = 'A';
     const float FLOAT_VALUE = 3.13;
     const char STRING_ARRAY[8] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'};

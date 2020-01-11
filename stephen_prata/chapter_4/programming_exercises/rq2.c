@@ -10,6 +10,7 @@
 */
 
 #include <stdio.h>
+
 #define BOOK "War and Peace"
 
 int main(void) {

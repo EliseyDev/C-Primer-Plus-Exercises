@@ -12,8 +12,8 @@ int main(void) {
     const int HEX_VALUE = 0x8A;
     const float FLOAT_VALUE = 232.346;
     const float FLOAT_EXP_VALUE = 2.33e+002;
-    const char STRING_VALUE[5] = {'A', 'B', 'C', 'D', 'E'};	
-    
+    const char STRING_VALUE[5] = {'A', 'B', 'C', 'D', 'E'};
+
     // a
     printf("%d\n", DECIMAL_VALUE);
     // b

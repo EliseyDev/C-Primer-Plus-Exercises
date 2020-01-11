@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-int main (void) {
+int main(void) {
     int toes = 10;
     int toes_twice = toes * 2;
     int toes_squared = toes * toes;

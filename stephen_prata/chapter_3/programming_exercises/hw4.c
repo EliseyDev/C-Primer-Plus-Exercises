@@ -13,7 +13,7 @@
 
 int main(void) {
     float number = 0;
-    
+
     printf("Please, enter a float number: ");
     scanf("%f", &number);
 
