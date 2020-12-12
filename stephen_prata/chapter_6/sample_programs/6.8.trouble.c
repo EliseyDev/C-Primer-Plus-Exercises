@@ -1,4 +1,4 @@
-/* summing.c -- sums whole numbers interactively from input  */
+/* trouble.c -- wrong usage of =  */
 #include <stdio.h>
 
 int main(void) {
@@ -11,7 +11,7 @@ int main(void) {
 
     status = scanf("%ld", &num);
 
-    while (status == 1) {
+    while (status = 1) {
         sum = sum + num;
         printf("Введите следующее целое число (или q для завершения программы): ");
         status = scanf("%ld", &num);
@@ -21,3 +21,4 @@ int main(void) {
 
     return 0;
 }
+

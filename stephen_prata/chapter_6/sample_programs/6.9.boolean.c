@@ -1,23 +1,24 @@
-/* summing.c -- sums whole numbers interactively from input  */
+/* boolean.c -- using _Bool  */
 #include <stdio.h>
 
 int main(void) {
     long num;
     long sum = 0L;
-    int status;
+    _Bool input_is_good;
 
     printf("Введите целое число для последующего суммирования ");
     printf(" (или q для завершения программы): ");
 
-    status = scanf("%ld", &num);
+    input_is_good = (scanf("%ld", &num) == 1);
 
-    while (status == 1) {
+    while (input_is_good) {
         sum = sum + num;
         printf("Введите следующее целое число (или q для завершения программы): ");
-        status = scanf("%ld", &num);
+        input_is_good = (scanf("%ld", &num) == 1);
     }
 
     printf("Сумма введенных целых чисел равна %ld.\n", sum);
 
     return 0;
 }
+
