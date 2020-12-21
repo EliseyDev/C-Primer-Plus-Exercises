@@ -16,8 +16,8 @@ int main(void) {
                     printf("%lu делится на %lu и %lu.\n", num, div, num / div);
                 } else {
                     printf("%lu делится на %lu.\n", num, div);
-                    isPrime = false;
                 }
+                isPrime = false;
             }
         }
         if (isPrime) {
