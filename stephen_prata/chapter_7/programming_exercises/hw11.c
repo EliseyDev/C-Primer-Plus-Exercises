@@ -172,7 +172,7 @@ void create_order(const double artichoke_order_weight, const double beetroot_ord
 
 void print_menu(const double artichoke_order_weight, const double beetroot_order_weight,
                 const double carrot_order_weight) {
-    printf("Чтобы оформить заказ, выберете категорию, указав букву:\n");
+    printf("\nЧтобы оформить заказ, выберете категорию, указав букву:\n");
     print_bar(SYMBOL, BAR_SIZE);
     printf(" Категория       Идентификатор       Стоимость $/фунт     В заказе\n");
     print_bar(SYMBOL, BAR_SIZE);
