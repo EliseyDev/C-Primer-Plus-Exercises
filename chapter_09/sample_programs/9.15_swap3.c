@@ -2,6 +2,10 @@
 
 void interchange(int *u, int *v);
 
+void test(double, double *);
+
+double *which(double *, double *);
+
 int main(void) {
     int x = 5, y = 10;
     printf("Первоначально x = %d и y = %d.\n", x, y);

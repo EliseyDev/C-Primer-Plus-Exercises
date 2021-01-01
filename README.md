@@ -1,6 +1,4 @@
-# C_exercises
-
-# Stephen Prata "C Primer Plus" book programming tasks
+# Stephen Prata "C Primer Plus" book programming exercises
 
 ## Contents at a Glance:
 
@@ -36,21 +34,56 @@
 - How to use the strlen() function to measure string lengths
 - The C preprocessor’s #define directive and ANSI C’s const modifier for creating symbolic constants
 
-### Chapter 5: "Operations, expressions and operators"
+### Chapter 5: "Operations, Expressions, and Statements"
 
-- Keywords: while, typedef
-- Operations: = - * / % -- (type)
-- Various operations of C language including for math actions
-- Priorities of operations and meaning of terms - operator and expression
-- Cycle while
-- Composite operators, explicit and implicit type cast
-- Functions with arguments
+- Keyword: while, typedef
+- Operators: = - * / % -- (type)
+- C’s multitudinous operators, including those used for common arithmetic operations
+- Operator precedence and the meanings of the terms statement and expression
+- The handy while loop
+- Compound statements, automatic type conversions, and type casts
+- How to write functions that use arguments
 
-### Chapter 6: "Cycles"
+### Chapter 6: "C Control Statements: Looping"
 
 - Keywords: for, while, do while
-- Operations: < > >= <= != == += *= -= /= %=
-- Functions fabs()
-- while, for, do while
-- Arrays
-- Functions which return values
+- Operators: < > >= <= != == += *= -= /= %=
+- Functions: fabs()
+- C’s three loop structures— while , for , and do while
+- Using relational operators to construct expressions to control these loops
+- Several other operators
+- Arrays, which are often used with loops
+- Writing functions that have return values     
+
+### Chapter 7: "C Control Statements: Branching And Jumps"
+
+- Keywords: if ,  else ,  switch ,  continue   
+break ,  case ,  default ,  goto    
+- Operators: && || ?:    
+- Functions: getchar() ,  putchar() , the  ctype.h  family   
+- How to use the  if  and  if else  statements and how to nest them   
+- Using logical operators to combine relational expressions into more involved test
+expressions   
+- C’s conditional operator   
+- The  switch  statement   
+- The  break ,  continue , and  goto  jumps   
+- Using C’s character I/O functions— getchar()  and  putchar()    
+- The family of character-analysis functions provided by the  ctype.h  header file
+
+### Chapter 8: "Character Input/Output and Input Validation"
+
+- More about input, output, and the differences between buffered and unbuffered input   
+- How to simulate the end-of-file condition from the keyboard   
+- How to use redirection to connect your programs to files   
+- Making the user interface friendlier
+
+### Chapter 9: "Functions"
+
+- Keyword: return    
+- Operators: *  (unary)  &  (unary)   
+- Functions and how to define them   
+- How to use arguments and return values   
+- How to use pointer variables as function arguments   
+- Function types   
+- ANSI C prototypes   
+- Recursion    
