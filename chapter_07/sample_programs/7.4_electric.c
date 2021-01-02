@@ -1,3 +1,5 @@
+// electric.c -- calculates electric bill
+
 #include <stdio.h>
 
 #define RATE1 0.13230
@@ -15,7 +17,7 @@ int main(void) {
     double kwh;
     double bill;
 
-    printf("Введите объем израсходованной электроэнергии в кВт/ч.\n");
+    printf("Please enter the kwh used.\n");
     scanf("%lf", &kwh);
 
     if (kwh <= BREAK1) {
@@ -28,7 +30,7 @@ int main(void) {
         bill = BASE3 + (RATE4 * (kwh - BREAK3));
     }
 
-    printf("Сумма к оплате за %.1f кВт/ч состаляет $%1.2f.\n", kwh, bill);
+    printf("The charge for %.1f kwh is $%1.2f.\n", kwh, bill);
 
     return 0;
 }

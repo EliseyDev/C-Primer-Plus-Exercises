@@ -1,3 +1,10 @@
+/* Use nested loops to produce the following pattern:
+  $
+  $$
+  $$$
+  $$$$
+  $$$$$ */
+
 #include <stdio.h>
 
 int main(void) {
@@ -5,8 +12,10 @@ int main(void) {
         for (int j = 0; j <= i; ++j) {
             printf("$");
         }
-        printf("\n");
+        putchar('\n');
     }
+
+    printf("Exit program.\n");
 
     return 0;
 }

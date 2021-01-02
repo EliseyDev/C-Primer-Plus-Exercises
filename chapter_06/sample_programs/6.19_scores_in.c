@@ -1,4 +1,5 @@
-// scores_in.c -- using cycles for arrays
+// scores_in.c -- uses loops for array processing
+
 #include <stdio.h>
 
 #define SIZE 10
@@ -9,13 +10,13 @@ int main(void) {
     int sum = 0;
     float average;
 
-    printf("Введите %d результатов игры в гольф:\n", SIZE);
+    printf("Enter %d golf scores:\n", SIZE);
 
     for (index = 0; index < SIZE; index++) {
         scanf("%d", &score[index]);
     }
 
-    printf("Введены следующие результаты:\n");
+    printf("The scores read in are as follows:\n");
 
     for (index = 0; index < SIZE; index++) {
         printf("%5d", score[index]);
@@ -26,8 +27,8 @@ int main(void) {
         sum += score[index];
     }
     average = (float) sum / SIZE;
-    printf("Сумма результатов = %d, среднее значение = %.2f\n", sum, average);
-    printf("Полученный гандикап равен %.0f.\n", average - PAR);
+    printf("Sum of scores = %d, average = %.2f\n", sum, average);
+    printf("That's  a handicap of %.0f.\n", average - PAR);
 
     return 0;
 }

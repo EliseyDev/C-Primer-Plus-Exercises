@@ -1,3 +1,5 @@
+// vowels.c -- uses multiple labels
+
 #include <stdio.h>
 
 int main(void) {
@@ -5,7 +7,7 @@ int main(void) {
     int a_ct, e_ct, i_ct, o_ct, u_ct;
     a_ct = e_ct = i_ct = o_ct = u_ct = 0;
 
-    printf("Введите текст или # для завершения программы.\n");
+    printf("Enter some text; enter # to quit.\n");
 
     while ((ch = getchar()) != '#') {
         switch (ch) {
@@ -39,8 +41,9 @@ int main(void) {
             }
         }
     }
-    printf("Количество гласных: A    E    I    O    U\n");
-    printf("                 %4d %4d %4d %4d %4d\n", a_ct, e_ct, i_ct, o_ct, u_ct);
+    printf("number of vowels:    A    E    I    O    U\n");
+    printf("                 %4d %4d %4d %4d %4d\n",
+           a_ct, e_ct, i_ct, o_ct, u_ct);
 
     return 0;
 }

@@ -1,3 +1,10 @@
+/* Modify the guessing program of  Listing   8.4    so that it uses a more intelligent guessing
+strategy. For example, have the program initially guess 50, and have it ask the user
+whether the guess is high, low, or correct. If, say, the guess is low, have the next guess
+be halfway between 50 and 100, that is, 75. If that guess is high, let the next guess be
+halfway between 75 and 50, and so on. Using this  binary search  strategy, the program
+quickly zeros in on the correct answer, at least if the user does not cheat. */
+
 #include <stdio.h>
 
 #define YES 'y'
@@ -13,20 +20,20 @@ int main(void) {
     int mid = (left + right) / 2;
     char response;
 
-    printf("Выберете целое число в интервале от 1 до 50. Я попробую угадать его.\n");
-    printf("Нажмите клавишу y, если моя догадка верна и \nклавишу n в противном случае\n");
-    printf("Вашим числом является  %d?\n", mid);
+    printf("Choose positive integer from 1 to 50. I try to guess it.\n");
+    printf("Enter y, if my guess is correct and \nn if not\n");
+    printf("Your number is %d?\n", mid);
 
     while ((response = getchar()) != YES) {
 
         if (response == NO) {
-            printf("Ладно, это число больше %d?\n", mid);
-            printf("Нажмите g если больше и l если меньше\n");
+            printf("Ok, This number is greater than %d?\n", mid);
+            printf("Enter g if greater amd l if less\n");
             clean_buffer();
 
 
             while ((response = getchar()) != LESS && response != GREATER) {
-                printf("Принимаются только варианты g или l.\n");
+                printf("Correct values are 'g' or 'l'.\n");
                 clean_buffer();
             }
 
@@ -39,15 +46,17 @@ int main(void) {
 
             mid = (left + right) / 2;
         } else {
-            printf("Принимаются только варианты y или n.\n");
+            printf("Correct values are 'y' or 'n'.\n");
         }
         while (getchar() != '\n') {
             continue;
         }
-        printf("Вашим числом является  %d?\n", mid);
+        printf("Your number is %d?\n", mid);
     }
 
-    printf("Я знал, что у меня получится!\n");
+    printf("I knew i could guess!\n");
+
+    printf("Exit program.\n");
 
     return 0;
 }

@@ -1,3 +1,7 @@
+/* Write a program that reads input until encountering the  #  character and then reports
+the number of spaces read, the number of newline characters read, and the number of all
+other characters read. */
+
 #include <stdio.h>
 
 int main(void) {
@@ -16,7 +20,8 @@ int main(void) {
         }
     }
 
-    printf("Символов: %d, пробелов: %d, новых строк: %d", symbol_counter, space_counter, newline_counter);
+    printf("Characters : %d, spaces: %d, newline: %d\n", symbol_counter, space_counter, newline_counter);
+    printf("Exit program.\n");
 
     return 0;
 }

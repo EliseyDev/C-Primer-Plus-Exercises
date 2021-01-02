@@ -1,3 +1,6 @@
+/* Write a program that reads input up to  #  and reports the number of times that the
+sequence  ei  occurs. */
+
 #include <stdio.h>
 
 int main(void) {
@@ -12,8 +15,8 @@ int main(void) {
         previous = current;
     }
 
-    printf("Количество вхождений ""ei"": %d\n", sequence_count);
-    printf("Программа завершена.\n");
+    printf("Times of occur ""ei"": %d\n", sequence_count);
+    printf("Exit program.\n");
 
     return 0;
 }

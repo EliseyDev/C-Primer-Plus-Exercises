@@ -1,4 +1,5 @@
-/* t_and_f.c -- true and false in C */
+/* t_and_f.c -- true and false values in C */
+
 #include <stdio.h>
 
 int main(void) {

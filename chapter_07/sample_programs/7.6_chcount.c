@@ -1,3 +1,5 @@
+// chcount.c  -- use the logical AND operator
+
 #include <stdio.h>
 
 #define PERIOD '.'
@@ -11,7 +13,7 @@ int main(void) {
             char_count++;
         }
     }
-    printf("Здесь имеется %d символов, отличных от кавычек.\n", char_count);
+    printf("There are %d non-quote characters.\n", charcount);
 
     return 0;
 }

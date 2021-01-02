@@ -1,3 +1,7 @@
+/* Chuckie Lucky won a million dollars (after taxes), which he places in an account that
+earns 8% a year. On the last day of each year, Chuckie withdraws $100,000. Write a
+program that finds out how many years it takes for Chuckie to empty his account. */
+
 #include <stdio.h>
 
 const double EIGHT_PERCENT = .08;
@@ -15,7 +19,8 @@ int main(void) {
         cache -= ONE_HUNDRED;
     }
 
-    printf("Необходимо %d лет, чтобы на счету не осталось денег", years);
+    printf("Requires %d years for deposit is being empty\n", years);
+    printf("Exit program.\n");
 
     return 0;
 }

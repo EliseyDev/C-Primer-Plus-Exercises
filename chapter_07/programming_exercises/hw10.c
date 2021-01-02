@@ -1,3 +1,16 @@
+/* The 1988 United States Federal Tax Schedule was the simplest in recent times. It had
+four categories, and each category had two rates. Here is a summary (dollar amounts are
+taxable income):
+  Category      Tax
+ Single    15% of first $17,850 plus 28% of excess
+ Head of Household    15% of first $23,900 plus 28% of excess
+ Married, Joint    15% of first $29,750 plus 28% of excess
+ Married, Separate    15% of first $14,875 plus 28% of excess
+ For example, a single wage earner with a taxable income of $20,000 owes 0.15 × $17,850
++ 0.28 × ($20,000−$17,850). Write a program that lets the user specify the tax category
+and the taxable income and that then calculates the tax. Use a loop so that the user can
+enter several tax cases. */
+
 #include <stdio.h>
 
 #define BASE_TAX1 .15
@@ -35,7 +48,7 @@ int main(void) {
         print_menu();
 
         while ((scanf("%d", &category) != 1) || (category < 1 || category > 5)) {
-            printf("Вы ввели некорретное значение. Допустимы 1-4 или 5 - выход.\n");
+            printf("Incorrect value. Enter 1-4 or 5 - quit.\n");
             clear_buffer();
         }
 
@@ -43,42 +56,38 @@ int main(void) {
             break;
         }
 
-        printf("Введите доход, для подсчета суммы облагаемого налога: ");
+        printf("Enter income to calc a tax: ");
         attempt = ATTEMPTS;
         while (attempt >= 0 && (scanf("%lf", &sum) != 1)) {
-            printf("Вы ввели некорретное значение. Необходимо ввести сумму из допустимых символов 0-9.\n");
+            printf("Incorrect value. Enter 0-9.\n");
             if (attempt > 0) {
-                printf("Осталось попыток: %d\n", attempt--);
+                printf("Attempts left: %d\n", attempt--);
             } else {
-                printf("Количество попыток исчерпано.\n");
+                printf("Attempts are over.\n");
                 --attempt;
             }
 
             clear_buffer();
         };
 
-        printf("Сумма исчисленного налога = $%.2lf\n\n", count_tax(category, sum));
+        printf("Tax sum = $%.2lf\n\n", count_tax(category, sum));
     } while (category != EXIT);
 
-    printf("Программа завершена.\n");
+    printf("Exit program.\n");
 
     return 0;
 }
 
 
 void print_menu(void) {
-    printf("Выберете категорию, соответствующую тарифной ставке:\n");
+    printf("Enter the number corresponding to the desired tariff plan:\n");
     print_bar(SYMBOL, BAR_SIZE);
-    printf("Категория                          Налог\n");
+    printf("Category                           Tax\n");
     print_bar(SYMBOL, BAR_SIZE);
-    printf("1) Одинокий                        15%% c первых $17 850 плюс 28%% от суммы,\n"
-           "                                   превышающей указанную\n\n");
-    printf("2) Глава семейства                 15%% с первых $23 900 плюс 28%% от суммы,\n"
-           "                                   превышающей указанную\n\n");
-    printf("3) Состоит в браке, совместное     15%% с первых $29 750 плюс 28%% от суммы,\n"
-           "   ведение хозяйства               превышающей указанную\n\n");
-    printf("4) Состоит в браке, раздельное     15%% с первых $14 875 плюс 28%% от суммы,\n"
-           "   ведение хозяйства               превышающей указанную\n\n");
+    printf("1) Single                          15%% of first $17,850 plus 28%%  of excess\n\n");
+    printf("2) Head of Household               15%% of first $23 900 plus 28%%  of excess\n\n");
+    printf("3) Married, Joint                  15%% of first $29 750 plus 28%%  of excess\n\n");
+    printf("4) Married, Separate               15%% of first $14 875 plus 28%%  of excess\n\n");
     printf("5) Выход\n");
     print_bar(SYMBOL, BAR_SIZE);
 }

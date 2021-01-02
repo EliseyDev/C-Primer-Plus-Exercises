@@ -1,17 +1,20 @@
+/* lesser.c -- finds the lesser of two evils */
+
 #include <stdio.h>
 
 int imin(int, int);
 
 int main(void) {
     int evil1, evil2;
-    printf("Введите два целых числа (или q для завершения):\n");
+    printf("Enter a pair of integers (q to quit):\n");
 
     while (scanf("%d %d", &evil1, &evil2) == 2) {
-        printf("Меньшим из двух чисел %d и %d является %d.\n", evil1, evil2, imin(evil1, evil2));
-        printf("Введите два целых числа (или q для завершения):\n");
+        printf("The lesser of %d and %d is %d.\n",
+               evil1, evil2, imin(evil1, evil2));
+        printf("Enter a pair of integers (q to quit):\n");
     }
 
-    printf("Программа завершена.\n");
+    printf("Bye.\n");
 
     return 0;
 }

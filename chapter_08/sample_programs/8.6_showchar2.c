@@ -1,3 +1,5 @@
+/* showchar2.c -- prints characters in rows and columns */
+
 #include <stdio.h>
 
 void display(char cr, int lines, int width);
@@ -6,7 +8,7 @@ int main(void) {
     int ch;
     int rows, cols;
 
-    printf("Введите символ и два целых числа:\n");
+    printf("Enter a character and two integers:\n");
     while ((ch = getchar()) != '\n') {
         if (scanf("%d %d", &rows, &cols) != 2) {
             break;
@@ -18,11 +20,11 @@ int main(void) {
             continue;
         }
 
-        printf("Введите еще один символ и два целых числа;\n");
-        printf("для завершения введите символ новой строки.\n");
+        printf("Enter another character and two integers;\n");
+        printf("Enter a newline to quit.\n");
     }
 
-    printf("Программа завершена.\n");
+    printf("Bye.\n");
 
     return 0;
 }

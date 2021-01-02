@@ -1,4 +1,5 @@
 // when.c -- when cycle finish
+
 #include <stdio.h>
 
 int main(void) {
@@ -6,9 +7,9 @@ int main(void) {
     while (n < 7) {
         printf("n = %d\n", n);
         n++;
-        printf("Теперь n = %d\n", n);
+        printf("Now n = %d\n", n);
     }
-    printf("Цикл завершен.\n");
+    printf("The loop has finished.\n");
 
     return 0;
 }

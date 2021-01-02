@@ -1,3 +1,13 @@
+/* Write a program that requests the hours worked in a week and then prints the gross pay,
+the taxes, and the net pay. Assume the following:
+     a.    Basic pay rate = $10.00/hr
+     b.    Overtime (in excess of 40 hours) = time and a half
+     c.    Tax rate: #15% of the first $300
+ 20% of the next $150
+ 25% of the rest
+ Use  #define  constants, and don’t worry if the example does not conform to current
+tax law. */
+
 #include <stdio.h>
 
 #define BRAKE1 300
@@ -21,17 +31,18 @@ int main(void) {
     double tax_sum;
     double income;
 
-    printf("Введите количество часов для подсчета суммы начислений: ");
+    printf("Enter number of hours worked in a week: ");
     scanf("%d", &hours);
 
     sum = get_sum(hours);
     tax_sum = get_tax(sum);
     income = get_income(sum, tax_sum);
 
-    printf("Общая сумма начислений: %.2lf\n", sum);
-    printf("Начисленный налог: %.2lf\n", tax_sum);
-    printf("Начислено заработной платы: %.2lf\n", income);
+    printf("Gross pay: %.2lf\n", sum);
+    printf("Taxes: %.2lf\n", tax_sum);
+    printf("Net pay: %.2lf\n", income);
 
+    printf("Exit program.\n");
 
     return 0;
 }

@@ -1,3 +1,5 @@
+// factor.c -- uses loops and recursion to calculate factorials
+
 #include <stdio.h>
 
 long fact(int n);
@@ -6,22 +8,23 @@ long rfact(int n);
 
 int main(void) {
     int num;
-    printf("Эта программа вычисляет факториалы.\n");
-    printf("Введите значение в диапозоне 0-12 (q для завершения):\n");
+    printf("This program calculates factorials.\n");
+    printf("Enter a value in the range 0-12 (q to quit):\n");
 
     while (scanf("%d", &num) == 1) {
         if (num < 0) {
-            printf("Отрицательные числа не подходят.\n");
+            printf("No negative numbers, please.\n");
         } else if (num > 12) {
-            printf("Вводимое значение должно быть меньше 13.\n");
+            printf("Keep input under 13.\n");
         } else {
-            printf("цикл: факториал %d = %ld\n", num, fact(num));
-            printf("рекурсия: факториал %d = %ld\n", num, rfact(num));
+            printf("loop: %d factorial = %ld\n",
+                   num, fact(num));
+            printf("recursion: %d factorial = %ld\n",
+                   num, rfact(num));
         }
-
-        printf("Введите значение в диапозоне 0-12 (q для завершения):\n");
+        printf("Enter a value in the range 0-12 (q to quit):\n");
     }
-    printf("Программа завершена.\n");
+    printf("Bye.\n");
 
     return 0;
 }

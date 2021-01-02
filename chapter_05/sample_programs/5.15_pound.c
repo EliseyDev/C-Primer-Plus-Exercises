@@ -1,4 +1,5 @@
 /* pound.c -- define function with argument */
+
 #include <stdio.h>
 
 void pound(int n);

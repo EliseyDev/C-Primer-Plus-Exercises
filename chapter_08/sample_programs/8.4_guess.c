@@ -1,25 +1,28 @@
+/* guess.c -- an inefficient and faulty number-guesser */
+
 #include <stdio.h>
 
 int main(void) {
     int guess = 1;
     char response;
 
-    printf("Выберете целое число в интервале от 1 до 100. Я попробую угадать его.\n");
-    printf("Нажмите клавишу y, если моя догадка верна и \nклавишу n в противном случае\n");
-    printf("Вашим числом является  %d?\n", guess);
+    printf("Pick an integer from 1 to 100. I will try to guess ");
+    printf("it.\nRespond with a y if my guess is right and with");
+    printf("\nan n if it is wrong.\n");
+    printf("Uh...is your number %d?\n", guess);
 
     while ((response = getchar()) != 'y') {
         if (response == 'n') {
-            printf("Ладно, тогда это %d\n", ++guess);
+            printf("Well, then, is it %d?\n", ++guess);
         } else {
-            printf("Принимаются только варианты y или n.\n");
+            printf("Valid only y or n.\n");
         }
         while (getchar() != '\n') {
             continue;
         }
     }
 
-    printf("Я знал, что у меня получится!\n");
+    printf("I knew I could do it!\n");
 
     return 0;
 }

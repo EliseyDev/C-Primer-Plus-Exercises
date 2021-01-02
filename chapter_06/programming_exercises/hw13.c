@@ -1,3 +1,7 @@
+/* Write a program that creates an eight-element array of  int s and sets the elements to the
+first eight powers of 2 and then prints the values. Use a  for  loop to set the values, and,
+for variety, use a  do while  loop to display the values. */
+
 #include <stdio.h>
 
 const int ARRAY_SIZE = 8;
@@ -16,9 +20,11 @@ int main(void) {
 
     int counter = 0;
     do {
-        printf("2 в степени: %d = %d\n", counter, array[counter]);
+        printf("2 in pow: %d = %d\n", counter, array[counter]);
         ++counter;
     } while (counter < ARRAY_SIZE);
+
+    printf("Exit program.\n");
 
     return 0;
 }

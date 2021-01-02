@@ -1,3 +1,7 @@
+/* Using  if else  statements, write a program that reads input up to  # , replaces each period
+with an exclamation mark, replaces each exclamation mark initially present with two
+exclamation marks, and reports at the end the number of substitutions it has made. */
+
 #include <stdio.h>
 
 int main(void) {
@@ -14,8 +18,8 @@ int main(void) {
         }
         printf("%c", ch);
     }
-    printf("Количество замен в тексте: %d\n", replace_count);
-    printf("Программа завершена.\n");
+    printf("Number of replacements in the text: %d\n", replace_count);
+    printf("Exit program.\n");
 
     return 0;
 }

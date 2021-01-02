@@ -1,5 +1,4 @@
-/*
-  Write a program that produces the following output:
+/* Write a program that produces the following output:
   For he's a jolly
   For he's a jolly
   For he's a jolly
@@ -11,8 +10,7 @@
 
   Have the program use two user-defined functions in addition to main() : one named
   jolly() that prints the “jolly good” message once, and one named deny() that prints
-  the final line once.
-*/
+  the final line once. */
 
 #include <stdio.h>
 

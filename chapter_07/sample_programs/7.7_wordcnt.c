@@ -1,3 +1,5 @@
+// wordcnt.c -- counts characters, words, lines
+
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
@@ -13,7 +15,7 @@ int main(void) {
     int p_lines = 0;
     bool inword = false;
 
-    printf("Введите текст для анализа (| для завершения):\n");
+    printf("Enter text to be analyzed (| to terminate):\n");
     prev = '\n';
 
     while ((c = getchar()) != STOP) {
@@ -34,8 +36,9 @@ int main(void) {
         p_lines = 1;
     }
 
-    printf("символов = %ld, слов = %d, строк = %d, ", n_chars, n_words, n_lines);
-    printf("неполных строк - %d\n", p_lines);
+    printf("characters = %ld, words = %d, lines = %d, ",
+           n_chars, n_words, n_lines);
+    printf("partial lines = %d\n", p_lines);
 
     return 0;
 }

@@ -1,4 +1,5 @@
 /* squares.c -- generate square table of 20 values*/
+
 #include <stdio.h>
 
 int main(void) {

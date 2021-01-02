@@ -1,3 +1,5 @@
+// cypher2.c -- alters input, preserving non-letters
+
 #include <stdio.h>
 #include <ctype.h>
 

@@ -12,7 +12,7 @@ int main(void) {
 
     printf("Enter your name: ");
     scanf("%s", name);
-    printf("Enter your height in santimeters: ");
+    printf("Enter your height in centimeter: ");
     scanf("%f", &height);
 
     printf("%s, you are %1.2f meters tall\n", name, height / 100);

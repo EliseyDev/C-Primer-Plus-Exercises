@@ -1,3 +1,5 @@
+/* lethead1.c */
+
 #include <stdio.h>
 
 #define NAME "GIGATHINK, INC."

@@ -1,3 +1,6 @@
+/* Devise a function  chline(ch,i,j)  that prints the requested character in columns  i
+through  j . Test it in a simple driver. */
+
 #include "hw2_lib.h"
 #include <stdio.h>
 
@@ -6,12 +9,12 @@ int main(void) {
     int row;
     int column;
 
-    printf("Введите символ: ");
+    printf("Enter character: ");
     scanf("%c", &ch);
 
-    printf("Введите количество строк: ");
+    printf("Enter number of spaces: ");
     scanf("%d", &row);
-    printf("Введите количество столбцов: ");
+    printf("Enter number to repeat character: ");
     scanf("%d", &column);
     chline(ch, row, column);
 

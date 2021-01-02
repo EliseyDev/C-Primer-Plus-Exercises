@@ -1,12 +1,14 @@
+/* animals.c -- uses a switch statement */
+
 #include <stdio.h>
 #include <ctype.h>
 
 int main(void) {
     unsigned char ch;
 
-    printf("Дайте мне букву алфавита и я укажу вам ");
-    printf("название животного,\nначинающееся с этой буквы.\n");
-    printf("Введите букву или # для завершения.\n");
+    printf("Give me a letter of the alphabet, and I will give ");
+    printf("an animal name\nbeginning with that letter.\n");
+    printf("Please type in a letter; type # to end my act.\n");
 
     while ((ch = getchar()) != '#') {
         if ('\n' == ch) {
@@ -15,43 +17,43 @@ int main(void) {
         if (islower(ch)) {
             switch (ch) {
                 case 'a': {
-                    printf("архар, дикий горный азиатский баран\n");
+                    printf("argali, a wild sheep of Asia\n");
                     break;
                 }
                 case 'b': {
-                    printf("бабирусса, дикая малайская свинья\n");
+                    printf("babirusa, a wild pig of Malay\n");
                     break;
                 }
-                case 'k' : {
-                    printf("коати, носуха обыкновенная\n");
+                case 'c' : {
+                    printf("coati, racoonlike mammal\n");
                     break;
                 }
-                case 'v': {
-                    printf("выхухоль, водоплавающее существо\n");
+                case 'd': {
+                    printf("desman, aquatic, molelike critter\n");
                     break;
                 }
                 case 'e': {
-                    printf("ехидна, игольчатый муравьед\n");
+                    printf("echidna, the spiny anteater\n");
                     break;
                 }
-                case 'p': {
-                    printf("рыболов, светло-коричневая куница\n");
+                case 'f': {
+                    printf("fisher, brownish marten\n");
                     break;
                 }
                 default: {
-                    printf("Вопрос озадачил!\n");
+                    printf("That's a stumper!\n");
                 }
             }
         } else {
-            printf("Распознаются только строчные буквы.\n");
+            printf("I recognize only lowercase letters.\n");
         }
         while (getchar() != '\n') {
             continue;
         }
-        printf("Введите букву или # для завершения.\n");
+        printf("Please type another letter or a #.\n");
     }
 
-    printf("До свидания.\n");
+    printf("Bye!\n");
 
     return 0;
 }

@@ -1,4 +1,5 @@
 /* rules.c --check priorities */
+
 #include <stdio.h>
 
 int main(void) {

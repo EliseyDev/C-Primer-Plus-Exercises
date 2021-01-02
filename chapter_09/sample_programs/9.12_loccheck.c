@@ -1,11 +1,15 @@
+/* loccheck.c  -- checks to see where variables are stored  */
+
 #include <stdio.h>
 
 void mikado(int);
 
 int main(void) {
     int pooh = 2, bah = 5;
-    printf("Внутри main() pooh = %d и &pooh = %p\n", pooh, &pooh);
-    printf("Внутри main() bah = %d и &bah = %p\n", bah, &bah);
+    printf("In main(), pooh = %d and &pooh = %p\n",
+           pooh, &pooh);
+    printf("In main(), bah = %d and &bah = %p\n",
+           bah, &bah);
 
     mikado(pooh);
 
@@ -15,7 +19,8 @@ int main(void) {
 void mikado(int bah) {
     int pooh = 10;
 
-    printf("Внутри mikado() pooh = %d и &pooh = %p\n", pooh, &pooh);
-    printf("Внутри mikado() bah = %d и &bah = %p\n", bah, &bah);
-
+    printf("In mikado(), pooh = %d and &pooh = %p\n",
+           pooh, &pooh);
+    printf("In mikado(), bah = %d and &bah = %p\n",
+           bah, &bah);
 }

@@ -1,3 +1,5 @@
+// file_eof.c --open a file and display it
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,11 +8,11 @@ int main(void) {
     FILE *fp;
     char fname[50];
 
-    printf("Введите имя файла: ");
+    printf("Enter the name of the file: ");
     scanf("%s", fname);
     fp = fopen(fname, "r");
     if (fp == NULL) {
-        printf("Не удается открыть файл. Программа завершена.\n");
+        printf("Failed to open file. Bye\n");
         exit(1);
     }
 

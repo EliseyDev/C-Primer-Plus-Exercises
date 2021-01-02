@@ -1,3 +1,6 @@
+/* Modify the  get_first()  function of  Listing   8.8    so that it returns the first non-
+whitespace character encountered. Test it in a simple program. */
+
 #include <stdio.h>
 #include <ctype.h>
 
@@ -19,7 +22,7 @@ int main(void) {
             case 'a': {
                 while ((ch = getchar()) != EOF) {
                     if (!isspace(ch)) {
-                        printf("Первый непробельный символ: %c\n", ch);
+                        printf("First no space character: %c\n", ch);
                         break;
                     }
                 }
@@ -34,19 +37,19 @@ int main(void) {
                 break;
             }
             default: {
-                printf("Ошибка!\n");
+                printf("Error!\n");
                 break;
             }
         }
     }
-    printf("Программа завершена.\n");
+    printf("Exit program.\n");
 
     return 0;
 }
 
 void count(void) {
     int n, i;
-    printf("До какого предела вести подсчет? Введите целое число:\n");
+    printf("Enter positive integer to count up to:\n");
     n = get_int();
 
     for (i = 1; i <= n; i++) {
@@ -61,14 +64,14 @@ void count(void) {
 char get_choice(void) {
     int ch;
 
-    printf("Введите букву, соответствующую выбранному варианту:\n");
-    printf("a. первый символ    r. звонок\n");
-    printf("c. подсчет          q. выход\n");
+    printf("Enter letter for chosen category:\n");
+    printf("a. first character  r. ring\n");
+    printf("c. counting         q. exit\n");
 
     ch = get_first();
 
     while (ch != 'a' && ch != 'r' && ch != 'c' && ch != 'q') {
-        printf("Выберете a, r, c или q.\n");
+        printf("Select a, r, c or q-exit.\n");
         ch = get_first();
     }
 }
@@ -91,8 +94,8 @@ int get_int(void) {
         while ((ch = getchar()) != '\n') {
             putchar(ch);
         }
-        printf(" не является целочисленным.\nВведите ");
-        printf("целове число, такое как 25, -178 или 3: ");
+        printf(" is not positive integer.\nEnter ");
+        printf("positive integer like 25, -178 or 3: ");
     }
 
     return input;

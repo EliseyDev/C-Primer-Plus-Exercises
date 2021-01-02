@@ -1,4 +1,5 @@
-// cypher1.c -- change characters
+// cypher1.c -- alters input, preserving spaces
+
 #include <stdio.h>
 
 #define SPACE ' '

@@ -1,4 +1,5 @@
 /*  nogood.c -- a program with errors */
+
 #include <stdio.h>
 
 int main(void)

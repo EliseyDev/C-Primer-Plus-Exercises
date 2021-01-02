@@ -1,6 +1,4 @@
-/*
-  Write a program to print your name and address.
-*/
+/* Write a program to print your name and address. */
 
 #include <stdio.h>
 

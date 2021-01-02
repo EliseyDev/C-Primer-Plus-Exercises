@@ -1,3 +1,5 @@
+/* hotel.h -- constants and declarations for hotel.c */
+
 #define QUIT 5
 #define HOTEL1 180.00
 #define HOTEL2 225.00

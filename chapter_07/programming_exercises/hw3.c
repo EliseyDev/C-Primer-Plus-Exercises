@@ -1,3 +1,8 @@
+/* Write a program that reads integers until 0 is entered. After input terminates, the
+program should report the total number of even integers (excluding the 0) entered, the
+average value of the even integers, the total number of odd integers entered, and the
+average value of the odd integers. */
+
 #include <stdio.h>
 
 double get_average(int count, double sum);
@@ -19,11 +24,12 @@ int main(void) {
         }
     }
 
-    printf("Общее количество четных чисел: %d, средне-арифметическое: %.2lf\n", even_count,
+    printf("Total number of even integers: %d, average value: %.2lf\n", even_count,
            get_average(even_count, even_sum));
-    printf("Общее количество нечетных чисел: %d, средне-арифметическое: %.2lf\n", odd_count,
+    printf("Total number of odd integers: %d, average value: %.2lf\n", odd_count,
            get_average(odd_count, odd_sum));
-    printf("Программа завершена\n");
+
+    printf("Exit program.\n");
 
     return 0;
 }

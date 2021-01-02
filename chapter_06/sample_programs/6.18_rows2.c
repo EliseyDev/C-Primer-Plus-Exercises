@@ -1,4 +1,5 @@
-// rows2.c
+// rows2.c -- using dependent nested loops
+
 #include <stdio.h>
 
 int main(void) {

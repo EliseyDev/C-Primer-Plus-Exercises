@@ -1,3 +1,5 @@
+/* swap3.c -- using pointers to make swapping work */
+
 #include <stdio.h>
 
 void interchange(int *u, int *v);
@@ -8,9 +10,9 @@ double *which(double *, double *);
 
 int main(void) {
     int x = 5, y = 10;
-    printf("Первоначально x = %d и y = %d.\n", x, y);
+    printf("Originally x = %d and y = %d.\n", x, y);
     interchange(&x, &y);
-    printf("Теперь x = %d и y = %d.\n", x, y);
+    printf("Now x = %d and y = %d.\n", x, y);
 
     return 0;
 }

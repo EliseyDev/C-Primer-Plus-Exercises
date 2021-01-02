@@ -1,4 +1,5 @@
-// sweetie1.c -- cycle with counter
+// sweetie1.c -- a counting loop
+
 #include <stdio.h>
 
 int main(void) {
@@ -6,7 +7,7 @@ int main(void) {
     int count = 1;
 
     while (count <= NUMBER) {
-        printf("Будь моим другом!\n");
+        printf("Be my Valentine!\n");
         count++;
     }
 

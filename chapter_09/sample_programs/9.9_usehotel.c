@@ -1,3 +1,6 @@
+/* usehotel.c -- room rate program */
+/* compile with   Listing   9.10         */
+
 #include <stdio.h>
 #include "9.11_hotel.h"
 
@@ -26,14 +29,14 @@ int main(void) {
             }
             default: {
                 hotel_rate = 0.0;
-                printf("Ошибка!\n");
+                printf("Oops!\n");
                 break;
             }
         }
         nights = getnights();
         showprice(hotel_rate, nights);
     }
-    printf("Благодарим за использование и желаем успехов.\n");
+    printf("Thank you and goodbye.\n");
 
     return 0;
 }

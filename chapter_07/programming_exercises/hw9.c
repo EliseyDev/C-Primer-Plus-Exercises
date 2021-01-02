@@ -1,3 +1,6 @@
+/* Write a program that accepts a positive integer as input and then displays all the prime
+numbers smaller than or equal to that number. */
+
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -8,8 +11,7 @@ int main(void) {
 
     bool isPrime;
 
-    printf("Введите целое число для анализа; ");
-    printf("Для завершения нажмите q.\n");
+    printf("Enter positive integer (or quit - q.)\n");
 
     scanf("%lu", &num);
 
@@ -22,7 +24,8 @@ int main(void) {
         }
     }
 
-    printf("\nДо свидания.\n");
+    putchar('\n');
+    printf("Exit program.\n");
 
     return 0;
 }

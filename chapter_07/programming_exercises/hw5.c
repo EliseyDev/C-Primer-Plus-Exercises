@@ -1,3 +1,5 @@
+/* Redo exercise 4 using a  switch. */
+
 #include <stdio.h>
 
 int main(void) {
@@ -20,8 +22,8 @@ int main(void) {
         printf("%c", ch);
     }
 
-    printf("Количество замен в тексте: %d\n", replace_count);
-    printf("Программа завершена.\n");
+    printf("Number of replacements in the text: %d\n", replace_count);
+    printf("Exit program.\n");
 
     return 0;
 }

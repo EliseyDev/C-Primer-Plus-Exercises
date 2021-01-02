@@ -1,3 +1,5 @@
+// divisors.c -- nested ifs display divisors of a number
+
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -6,27 +8,29 @@ int main(void) {
     unsigned long div;
     bool isPrime;
 
-    printf("Введите целое число для анализа; ");
-    printf("Для завершения нажмите q.\n");
+    printf("Please enter an integer for analysis; ");
+    printf("Enter q to quit.\n");
 
     while (scanf("%lu", &num) == 1) {
         for (div = 2, isPrime = true; (div * div) <= num; div++) {
             if (num % div == 0) {
                 if ((div * div) != num) {
-                    printf("%lu делится на %lu и %lu.\n", num, div, num / div);
+                    printf("%lu is divisible by %lu and %lu.\n",
+                           num, div, num / div);
                 } else {
-                    printf("%lu делится на %lu.\n", num, div);
+                    printf("%lu is divisible by %lu.\n",
+                           num, div);
                 }
                 isPrime = false;
             }
         }
         if (isPrime) {
-            printf("%lu является простым числом.\n", num);
+            printf("%lu is prime.\n", num);
         }
-        printf("Введите следующее число для анализа; ");
-        printf("Для завершения введите q.\n");
+        printf("Please enter another integer for analysis; ");
+        printf("Enter q to quit.\n");
     }
-    printf("До свидания.\n");
+    printf("Bye.\n");
 
     return 0;
 }

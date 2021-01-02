@@ -1,3 +1,5 @@
+/* echo.c -- repeats input */
+
 #include <stdio.h>
 
 int main(void) {

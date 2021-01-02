@@ -1,4 +1,5 @@
 /* stillbad.c -- a program with its syntax errors fixed */
+
 #include <stdio.h>
 
 int main(void) {

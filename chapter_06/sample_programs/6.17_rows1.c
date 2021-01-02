@@ -1,4 +1,5 @@
-/* rows1.c -- inner cycles */
+/* rows1.c -- uses nested loops */
+
 #include <stdio.h>
 
 #define ROWS 6

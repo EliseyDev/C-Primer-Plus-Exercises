@@ -1,12 +1,14 @@
+/* swap1.c -- first attempt at a swapping function */
+
 #include <stdio.h>
 
 void interchange(int u, int v);
 
 int main(void) {
     int x = 5, y = 10;
-    printf("Первоначально x = %d и y = %d.\n", x, y);
+    printf("Originally x = %d and y = %d.\n", x, y);
     interchange(x, y);
-    printf("Теперь x = %d и y = %d.\n", x, y);
+    printf("Now x = %d and y = %d.\n", x, y);
 
     return 0;
 }

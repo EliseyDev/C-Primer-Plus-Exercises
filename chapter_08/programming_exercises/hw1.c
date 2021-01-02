@@ -1,3 +1,5 @@
+/* Devise a program that counts the number of characters in its input up to the end of file. */
+
 #include <stdio.h>
 
 int main(void) {
@@ -7,10 +9,9 @@ int main(void) {
         ++char_counter;
     }
 
-    printf("Количество символов в файле: %d\n", char_counter);
+    printf("Number of characters in file: %d\n", char_counter);
 
-    printf("Программа завершена.\n");
-
+    printf("Exit program.\n");
 
     return 0;
 }

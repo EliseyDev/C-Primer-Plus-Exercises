@@ -1,3 +1,5 @@
+/* showchar1.c -- program with a BIG I/O problem */
+
 #include <stdio.h>
 
 void display(char ct, int lines, int width);
@@ -5,16 +7,16 @@ void display(char ct, int lines, int width);
 int main(void) {
     int ch;
     int rows, cols;
-    printf("Введите символ и два целых числа:\n");
+    printf("Enter a character and two integers:\n");
 
     while ((ch = getchar()) != '\n') {
         scanf("%d %d", &rows, &cols);
         display(ch, rows, cols);
-        printf("Введите еще один символ и два целых числа;\n");
-        printf("для завершения введите символ новой строки.\n");
+        printf("Enter another character and two integers;\n");
+        printf("Enter a newline to quit.\n");
     }
 
-    printf("Программа завершена.\n");
+    printf("Bye.\n");
 
     return 0;
 }

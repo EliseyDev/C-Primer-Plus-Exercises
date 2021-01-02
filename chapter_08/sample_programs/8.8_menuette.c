@@ -1,3 +1,5 @@
+/* menuette.c -- menu techniques */
+
 #include <stdio.h>
 
 char get_choice(void);
@@ -15,7 +17,7 @@ int main(void) {
     while ((choice = get_choice()) != 'q') {
         switch (choice) {
             case 'a': {
-                printf("Покупайте дешево, продавайте дорого.\n");
+                printf("Buy low, sell high.\n");
                 break;
             }
             case 'r': {
@@ -27,19 +29,19 @@ int main(void) {
                 break;
             }
             default: {
-                printf("Ошибка!\n");
+                printf("Program error!\n");
                 break;
             }
         }
     }
-    printf("Программа завершена.\n");
+    printf("Bye.\n");
 
     return 0;
 }
 
 void count(void) {
     int n, i;
-    printf("До какого предела вести подсчет? Введите целое число:\n");
+    printf("Count how far? Enter an integer:\n");
     n = get_int();
 
     for (i = 1; i <= n; i++) {
@@ -54,14 +56,14 @@ void count(void) {
 char get_choice(void) {
     int ch;
 
-    printf("Введите букву, соответствующую выбранному варианту:\n");
-    printf("a. совет            r. звонок\n");
-    printf("c. подсчет          q. выход\n");
+    printf("Enter the letter of your choice:\n");
+    printf("a. advice           b. bell\n");
+    printf("c. count            q. quit\n");
 
     ch = get_first();
 
     while (ch != 'a' && ch != 'r' && ch != 'c' && ch != 'q') {
-        printf("Выберете a, r, c или q.\n");
+        printf("Please respond with a, b, c, or q.\n");
         ch = get_first();
     }
 }
@@ -84,8 +86,8 @@ int get_int(void) {
         while ((ch = getchar()) != '\n') {
             putchar(ch);
         }
-        printf(" не является целочисленным.\nВведите ");
-        printf("целове число, такое как 25, -178 или 3: ");
+        printf(" is not an integer.\nPlease enter an ");
+        printf("integer value, such as 25, -178, or 3: ");
     }
 
     return input;

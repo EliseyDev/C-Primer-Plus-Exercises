@@ -1,3 +1,5 @@
+// checking.c -- validating input
+
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -14,33 +16,34 @@ int main(void) {
     long stop;
     double answer;
 
-    printf("Эта программа вычисляет сумму квадратов "
-           "целых чисел в заданном диапозоне.\nНижняя граница не должна "
-           "быть меньше -10000000, \nа вернхняя не должна быть "
-           "больше +10000000.\nвведите значения "
-           "пределов (для завершения введите 0 для обоих пределов):\n"
-           "нижний предел: ");
+    printf("This program computes the sum of the squares of "
+           "integers in a range.\nThe lower bound should not "
+           "be less  than -10000000 and\nthe upper bound "
+           "should not be more than +10000000.\nEnter the "
+           "limits (enter 0 for both limits to quit):\n"
+           "lower limit: ");
 
     start = get_long();
-    printf("верхний предел: ");
+    printf("upper limit: ");
     stop = get_long();
 
     while (start != 0 || stop != 0) {
         if (bad_limits(start, stop, MIN, MAX)) {
-            printf("Повторите попытку.\n");
+            printf("Please try again.\n");
         } else {
             answer = sum_squares(start, stop);
-            printf("Сумма квадратов целых чисел "
-                   "от %ld до %ld равна %g\n", start, stop, answer);
+            printf("The sum of the squares of the integers ");
+            printf("from %ld to %ld is %g\n",
+                   start, stop, answer);
         }
-        printf("Введите значения пределов (для завершения "
-               "введите 0 для обоих пределов):\n"
-               "нижний предел: ");
+        printf("Enter the limits (enter 0 for both "
+               "limits to quit):\n");
+        printf("lower limit: ");
         start = get_long();
-        printf("верхний предел: ");
+        printf("upper limit: ");
         stop = get_long();
     }
-    printf("Программа завершена.\n");
+    printf("Done.\n");
 
     return 0;
 }
@@ -53,8 +56,8 @@ long get_long(void) {
             putchar(ch);
         }
 
-        printf(" не является целочисленным.\nВведите "
-               "целое число, такое как 25,-178 или 3: ");
+        printf(" is not an integer.\nPlease enter an ");
+        printf("integer value, such as 25, -178, or 3: ");
     }
 
     return input;
@@ -75,15 +78,15 @@ bool bad_limits(long begin, long end, long low, long high) {
     bool not_good = false;
 
     if (begin > end) {
-        printf("%ld е меньше чем %ld.\n", begin, end);
+        printf("%ld isn't smaller than %ld.\n", begin, end);
         not_good = true;
     }
     if (begin < low || end < low) {
-        printf("Значения должны быть равны %d или больше.\n", low);
+        printf("Values must be %ld or greater.\n", low);
         not_good = true;
     }
     if (begin > high || end > high) {
-        printf("Значения должны быть равны %d или меньше.\n", high);
+        printf("Values must be %ld or less.\n", high);
         not_good = true;
     }
 
