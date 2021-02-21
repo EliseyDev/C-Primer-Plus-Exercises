@@ -1,7 +1,7 @@
 /* Devise a function chline(ch,i,j) that prints the requested character in columns i
 through j. Test it in a simple driver. */
 
-#include "hw2_lib.h"
+#include "9.2_lib.h"
 #include <stdio.h>
 
 void chline(char ch, int i, int j) {

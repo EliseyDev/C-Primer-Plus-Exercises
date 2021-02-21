@@ -2,7 +2,7 @@
 the function with a simple driver. */
 
 #include <stdio.h>
-#include "hw1_lib.h"
+#include "9.1_lib.h"
 
 int main(void) {
     double f_num;

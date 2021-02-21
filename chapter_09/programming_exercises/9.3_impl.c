@@ -4,7 +4,7 @@ be printed on a line, and the second integer specifies the number of lines that 
 printed. Write a program that makes use of this function. */
 
 #include <stdio.h>
-#include "hw3_lib.h"
+#include "9.3_lib.h"
 
 void print_char(char ch, int repeat, int row) {
     for (int i = 0; i < row; ++i) {
