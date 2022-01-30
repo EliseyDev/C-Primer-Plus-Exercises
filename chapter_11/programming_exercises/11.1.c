@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-void read_string(int n, char str_array[]);
+#define STRING_LEN 10
+
+void read_string(int n, char *str);
 
 int main(void) {
-    int n = 10;
-    char str_array[n];
+    int n = STRING_LEN;
+    char str[n];
 
-    read_string(n, str_array);
+    read_string(n, str);
 
-    fputs(str_array, stdout);
+    fputs(str, stdout);
 
     return 0;
 }
 
-void read_string(int n, char str_array[]) {
-    fgets(str_array, n, stdin);
+void read_string(int n, char *str) {
+    fgets(str, STRING_LEN, stdin);
 }
