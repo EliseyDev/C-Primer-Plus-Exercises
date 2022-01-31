@@ -2,7 +2,7 @@
 
 #define STRING_LEN 10
 
-void read_string(int n, char *str);
+void read_string(char *str, int n);
 
 int main(void) {
     int n = STRING_LEN;
@@ -15,6 +15,6 @@ int main(void) {
     return 0;
 }
 
-void read_string(int n, char *str) {
+void read_string(char *str, int n) {
     fgets(str, STRING_LEN, stdin);
 }
